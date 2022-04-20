@@ -509,6 +509,54 @@ input {
 
 @media only screen and (min-width: 1200px) {
                                   /* Desktop Styles */
+  /* General */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Header */
+
+  /* Hero Area */
+  .hero-area h1 {
+    width: 75%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .form-description,
+  aside .form {
+    width: 33%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 45%;
+  }
+
+  /* Footer */
+
+  /* About */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 90%;
+  }
+
+  /* FAQ */
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 @media print,

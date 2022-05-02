@@ -94,6 +94,8 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
@@ -108,18 +110,21 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+  font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
 }
 
 p {
-  font-size: 1.125em;
-  line-height: 1.5em;
+  font-size: .875em;
+  line-height: 1.285em;
 }
 
 img {
@@ -135,9 +140,8 @@ address {
 }
 
 .content-wrapper {
-  width: 85%;
+  width: 90%;
   margin: 50px 0;
-  background: #d3d3;
 }
   
 /* ------ Base Header - Footer Styles ------ */
@@ -148,6 +152,7 @@ footer {
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
+  background-color: #202322;
 }
 
 /* Header Styles */
@@ -170,6 +175,9 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -184,20 +192,18 @@ header nav ul {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 /* Footer Styles */
 
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
 footer p {
   margin: 0;
-}
-
-footer h4 {
- margin: 20px 0;
 }
 
 footer .contact {
@@ -206,7 +212,7 @@ footer .contact {
 
 footer .content-wrapper {
   width: 55%;
-  padding: 30px 0 50px 0;
+  margin: 30px 0 50px 0;
 }
 
 footer .social-icons {
@@ -235,19 +241,49 @@ h3 {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
 }
 
 input {
   margin: 10px 0;
 }
 
-.form {
-  margin-top: 35px;
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
@@ -273,6 +309,7 @@ input {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -280,10 +317,12 @@ input {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 20px;
+  line-height: 1em;
 }
 
 .reviews h3 {
@@ -298,6 +337,7 @@ input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section {
@@ -305,6 +345,7 @@ input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -318,6 +359,7 @@ input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -329,13 +371,17 @@ input {
 }
 
 .faq h2 {
- margin-bottom: 30px;
+ margin-bottom: 40px;
+ line-height: 1em;
 }
 
 .faq-content {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
+.faq-content h4 {
+  line-height: 1.333em;
+}
 
 /* ==========================================================================
    Helper classes
@@ -433,6 +479,16 @@ input {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
 /* Header */
   header {
     height: 100px;
@@ -445,8 +501,13 @@ input {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
+    font-size: 1em;
   }
 
   header nav ul {
@@ -458,6 +519,12 @@ input {
   }
 
 /* Hero Area */
+
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin: 0;
+}
 
 /* Aside */
 
@@ -475,6 +542,10 @@ input {
   }
 
 /* Features */
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -497,20 +568,38 @@ input {
     width: 50%;
   }
 
+  .reviews h2 {
+    width: 80%;
+  }
+
+  .reviews h3 {
+    margin: 0;
+    width: 75%;
+  }
+
 /* Footer */
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
+    margin: 80px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
   }
 
   footer .copyright {
@@ -525,12 +614,18 @@ input {
     flex-flow: row wrap;
   }
 
+  .mission-content h2 {
+    font-size: 2.25em;
+    width: 95%;
+  }
+
   .mission-content p {
-    width: 45%;
+    width: 48%;
   }
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+    margin-bottom: 50px;
   }
 
   address {
@@ -539,17 +634,35 @@ input {
     align-items: flex-start;
   }
 
+  address h3 {
+    font-size: 1.5em;
+  }
+
 /* FAQ */
   .faq .content-wrapper {
+    margin: 70px 0;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .faq-content {
-    flex-basis: 45%;
+    flex-basis: 47%;
+    margin-bottom: 15px;
   }
 
   .faq h2 {
     width: 100%;
+    margin: 30px 0;
+  }
+
+  .faq h4 {
+    margin: 0;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.285em;
   }
 
 }
@@ -561,11 +674,30 @@ input {
     max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333em;
+  }
+
   /* Header */
+
+  header nav {
+    width: 15%;
+  }
 
   /* Hero Area */
   .hero-area h1 {
     width: 75%;
+    font-size: 3.75em;
   }
 
   /* Aside */
@@ -578,6 +710,10 @@ input {
     width: 33%;
   }
 
+  aside p {
+    margin: 15px 0;
+  }
+
   /* Features */
   .features h2 {
     width: 90%;
@@ -588,21 +724,45 @@ input {
   }
 
   /* Reviews */
+  .reviews h2 {
+    margin-bottom: 50px;
+  }
+
   .reviews article div {
     width: 45%;
   }
 
   /* Footer */
+  footer h4 {
+    font-size: 1.875em;
+  }
 
   /* About */
   .mission h2,
   .contact-section .content-wrapper h2 {
-      width: 90%;
+      width: 96%;
+      font-size: 3em;
+      margin-bottom: 20px;
+  }
+
+  .mission p {
+    margin: 0;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /* FAQ */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
 
